@@ -446,7 +446,7 @@ function library:CreateWindow(name, size, hidebutton)
         tab.TabButton.TextYAlignment = Enum.TextYAlignment.Center
         tab.TabButton.BackgroundTransparency = 1
         tab.TabButton.BorderSizePixel = 0
-        tab.TabButton.Size = UDim2.fromOffset(size.X + 27, window.TabList.AbsoluteSize.Y - 1)
+        tab.TabButton.Size = UDim2.fromOffset(size.X + 26.3, window.TabList.AbsoluteSize.Y - 1)
         tab.TabButton.Name = tab.name
         tab.TabButton.TextSize = window.theme.fontsize
         updateevent.Event:Connect(function(theme)

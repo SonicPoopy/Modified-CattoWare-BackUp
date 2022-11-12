@@ -446,7 +446,7 @@ function library:CreateWindow(name, size, hidebutton)
         tab.TabButton.TextYAlignment = Enum.TextYAlignment.Center
         tab.TabButton.BackgroundTransparency = 1
         tab.TabButton.BorderSizePixel = 0
-        tab.TabButton.Size = UDim2.fromOffset(size.X + 28.5, window.TabList.AbsoluteSize.Y - 1)
+        tab.TabButton.Size = UDim2.fromOffset(size.X + 27, window.TabList.AbsoluteSize.Y - 1)
         tab.TabButton.Name = tab.name
         tab.TabButton.TextSize = window.theme.fontsize
         updateevent.Event:Connect(function(theme)
@@ -542,7 +542,7 @@ function library:CreateWindow(name, size, hidebutton)
             sector.Main.Name = sector.name:gsub(" ", "") .. "Sector"
             sector.Main.BorderSizePixel = 0
             sector.Main.ZIndex = 4
-            sector.Main.Size = UDim2.fromOffset(window.size.X.Offset / 2 - 17, 19)
+            sector.Main.Size = UDim2.fromOffset(window.size.X.Offset / 2 - 15, 18)
             sector.Main.BackgroundColor3 = window.theme.sectorcolor
             --sector.Main.Position = sector.side == "left" and UDim2.new(0, 11, 0, 12) or UDim2.new(0, window.size.X.Offset - sector.Main.AbsoluteSize.X - 11, 0, 12)
             updateevent.Event:Connect(function(theme)

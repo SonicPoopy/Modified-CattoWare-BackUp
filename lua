@@ -20,7 +20,7 @@ local camera = game.Workspace.CurrentCamera
 
 library.theme = {
     fontsize = 15,
-    titlesize = 18,
+    titlesize = 15,
     font = Enum.Font.Code,
     background = "rbxassetid://5553946656",
     tilesize = 90,
@@ -446,7 +446,7 @@ function library:CreateWindow(name, size, hidebutton)
         tab.TabButton.TextYAlignment = Enum.TextYAlignment.Center
         tab.TabButton.BackgroundTransparency = 1
         tab.TabButton.BorderSizePixel = 0
-        tab.TabButton.Size = UDim2.fromOffset(size.X + 17, window.TabList.AbsoluteSize.Y - 1)
+        tab.TabButton.Size = UDim2.fromOffset(size.X + 20, window.TabList.AbsoluteSize.Y - 1)
         tab.TabButton.Name = tab.name
         tab.TabButton.TextSize = window.theme.fontsize
         updateevent.Event:Connect(function(theme)
